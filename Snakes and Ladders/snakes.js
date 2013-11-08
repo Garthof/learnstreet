@@ -45,7 +45,7 @@ function createBoardCode() {
 function getSteps() {
     // Select a random number from 1-6 and return that number.
     // This simulates the rolling of a single die.
-	return Math.floor(Math.random() * 6);
+    return Math.floor(Math.random() * 6);
 }
 
 function makeMove(playerPos, steps1, steps2) {
@@ -55,7 +55,7 @@ function makeMove(playerPos, steps1, steps2) {
     // The player's current board position is passed in as "playerPos".
     // This method adds steps1 and steps2 to playerPos. You will also need to
     // check the new player position against 99, which is as far as the board can go.
-	var newPos = playerPos + steps1 + steps2;
+    var newPos = playerPos + steps1 + steps2;
     var endPos = 99;
     
     if (newPos <= endPos) {
